@@ -19,7 +19,7 @@ public:
     Node();
     Node(T data,Node *parent);
 
-    int getData();
+    T getData();
     void setData(T value);
     Node<T> *getParent(Node *a);
     void setParent(Node *value);
@@ -113,7 +113,7 @@ void Tree<T>::preorder(Node<T> *n)
 }
 
 template<class T>
-int Node<T>::getData()
+T Node<T>::getData()
 {
     return data;
 }
